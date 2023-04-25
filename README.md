@@ -12,3 +12,13 @@ La database doit contenirune table 'users' qui contiendra 3 champs:
 'id' int clé primaire
 'email' chaine de 255 caractères et unique (de préférence).
 'password' chaine de 255 caractères
+
+Voici un exemple de requete SQL a intégrer dans votre BDD:
+
+CREATE TABLE users (
+  id INT NOT NULL AUTO_INCREMENT,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id)
+);
+
